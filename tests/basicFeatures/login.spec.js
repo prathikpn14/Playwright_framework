@@ -2,8 +2,6 @@ import {test,expect} from "../../customFixtures/login.js"
 
 
 
-test("login to Vtiger", async({loginFixture}) => {
+test.only("login to Vtiger", async({loginFixture}) => {
     
-
-
 })
