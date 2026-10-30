@@ -9,9 +9,13 @@ const test = base.extend({
         
         
         //initializing data required
-        let url = dataFile.url
-        let username = dataFile.username
-        let password = dataFile.password 
+        // let url = dataFile.url
+        // let username = dataFile.username
+        // let password = dataFile.password 
+        let url = process.env.BASE_URL
+        let username = process.env.USERNAMEqa
+        let password = process.env.PASSWORDqa
+
 
         //script starts
         await page.goto(url)
