@@ -7,9 +7,10 @@ import { defineConfig, devices } from '@playwright/test';
  */
 import dotenv from 'dotenv';
 // import path from 'path';
+const env = process.env.TEST_ENV || 'qa'    // this means if we dont mention server take it as qa (|| = or operator)
 dotenv.config({ 
   // path: path.resolve(__dirname, '.env') 
-  path : `./environments/${process.env.TEST_ENV}.env`  // we need to learn and set this up by ourselves.
+  path : `./environments/${env}.env`  // we need to learn and set this up by ourselves.
 });
 
 /**
