@@ -1,5 +1,4 @@
 import {test as base,expect} from "@playwright/test"
-import dataFile from "../testData/commonData.json"
 import Landing from "../ObjectRepository/landing.page"
 
 const test = base.extend({

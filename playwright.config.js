@@ -11,7 +11,7 @@ const env = process.env.TEST_ENV || 'qa'    // this means if we dont mention ser
 dotenv.config({ 
   // path: path.resolve(__dirname, '.env') 
   path : `./environments/${env}.env`
-  console.log(`${env} is my env`);
+  
     // we need to learn and set this up by ourselves.
 });
 
